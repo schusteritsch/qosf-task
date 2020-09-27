@@ -1,0 +1,52 @@
+Considering [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] layers
+Optimization terminated successfully.
+         Current function value: 0.636378
+         Iterations: 25
+         Function evaluations: 234
+         Gradient evaluations: 26
+Optimization terminated successfully.
+         Current function value: 0.196114
+         Iterations: 90
+         Function evaluations: 1649
+         Gradient evaluations: 97
+Optimization terminated successfully.
+         Current function value: 0.046805
+         Iterations: 108
+         Function evaluations: 2925
+         Gradient evaluations: 117
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 139
+         Function evaluations: 4719
+         Gradient evaluations: 143
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 68
+         Function evaluations: 2870
+         Gradient evaluations: 70
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 61
+         Function evaluations: 3136
+         Gradient evaluations: 64
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 38
+         Function evaluations: 2223
+         Gradient evaluations: 39
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 31
+         Function evaluations: 2080
+         Gradient evaluations: 32
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 27
+         Function evaluations: 2117
+         Gradient evaluations: 29
+Optimization terminated successfully.
+         Current function value: 0.000000
+         Iterations: 23
+         Function evaluations: 2187
+         Gradient evaluations: 27
+[0.6363781096306391, 0.1961144206650971, 0.04680516931708921, 4.039127627284092e-08, 2.5511674664045474e-10, 1.5546750807984715e-09, 1.7327606021003817e-09, 1.3234018651399335e-09, 6.108039144473755e-10, 6.000442771915024e-10]
