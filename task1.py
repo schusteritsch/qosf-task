@@ -17,7 +17,6 @@ from qiskit.quantum_info import random_statevector
 import numpy as np
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
-# %matplotlib inline
 
 #define a function to calculate the norm (to be minimized)
 def norm(theta, phi, l):
@@ -29,7 +28,6 @@ def getStateVector(theta, l):
     circ = setupCircuit(theta, l)
     simulator = Aer.get_backend('statevector_simulator')
     result = execute(circ, backend=simulator).result()
-#     statevector = result.get_statevector()
     return result.get_statevector()
 
 def setupCircuit(theta, L):
@@ -64,21 +62,10 @@ def main():
 	vec = random_statevector(16)
 	epsilon=[]
 	for l in L:
-	#     #need a vector of random numbers that is normalized to 1, 
-	#     #easiest way to just take function from qiskit
-	#     vec = random_statevector(16)
-	#     print(vec)
-
 	    #define random phi
-	#     theta = np.random.rand(l*2,4)*np.pi*2
 	    #scipy minimize wants a vector not array
 	    theta = np.random.rand(l*2*4)*np.pi*2
-	#     print(norm(theta, vec, l))
-	#     res = minimize(norm, theta, args=(vec, l), method='nelder-mead', options={'xatol': 1e-8, 'disp': True})
-	#     print(res.x)
-	#     print(theta)
 	    res = minimize(norm, theta, args=(vec, l), method='BFGS',options={'disp':True,'maxiter':1000})
-	#     print(res.x)
 	    epsilon.append(norm(res.x, vec, l))
 
 	print(epsilon)
