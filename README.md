@@ -20,4 +20,6 @@ A plot of &epsilon; is generated at the end.
 
 ## Output
 
-Typical output is shown in output.dat, and the plot is shown in epsilon.eps.
+Typical output (not necessary for getting plot, just for debugging) is shown in output.dat, and the plot is shown in epsilon.eps.
+
+We see that from roughly L=4, &epsilon; is negigibly small, i.e. the norm of the difference of the random state vector and the final state vector of the quantum circuit vanishes. 
